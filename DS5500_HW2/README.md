@@ -44,6 +44,10 @@ As can be seen from the p-value of all the terms in figure 3, all the terms are 
 Hence the model fitted is : Y1 = -350.49 + 4.759X1 + 0.189X2, 
 where Y1 = Life Expectancy, X1 = log(Income), X2 = Year
 
+##### Impact of autocorrelation of time series on analysis:
+
+Autocorrelation of time series exists when there is a correlation of the time series with it’s own lagged version. It might be useful in some of the problems of technical analysis, such as, predicting if there is a momentum factor associated with a stock. However, an underlying assumptions of regression analysis is that data has no autocorrelation. If not so, autocorrelation increases the variance of the coefficient estimates and hence deflates the size of estimated standard error. The F-statistic, R2, and adjusted R2 may not be accurate either. Additionally,  when the autocorrelation comes from a missing independent variable, the coefficient estimates will be biased. This makes the results obtained by the model very unclear, misleading and in some cases meaningless. 
+
 [code under heading Problem4 in the ipython file - DS5500_HW2_code.ipynb]
 
 ## Problem 5:
@@ -76,6 +80,10 @@ As can be seen from the p-value of all the terms in figure 6, all the terms are 
 
 Hence the model fitted is : Y1 = 61.025 - 0.626X1 + 0.026X2, 
 where Y1 = log(Child Mortality Rate), X1 = log(Income), X2 = Year
+
+##### Impact of autocorrelation of time series on analysis:
+
+Autocorrelation of time series exists when there is a correlation of the time series with it’s own lagged version. It might be useful in some of the problems of technical analysis, such as, predicting if there is a momentum factor associated with a stock. However, an underlying assumptions of regression analysis is that data has no autocorrelation. If not so, autocorrelation increases the variance of the coefficient estimates and hence deflates the size of estimated standard error. The F-statistic, R2, and adjusted R2 may not be accurate either. Additionally,  when the autocorrelation comes from a missing independent variable, the coefficient estimates will be biased. This makes the results obtained by the model very unclear, misleading and in some cases meaningless. 
 
 [code under heading Problem5 in the ipython file - DS5500_HW2_code.ipynb]
 
