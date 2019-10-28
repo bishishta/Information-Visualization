@@ -38,9 +38,11 @@ Higher the R-squared value, better the model because it means that more variance
 ##### Final model parameters :
 
 As can be seen from the p-value of all the terms in figure 3, all the terms are significant. The intercept and co-efficient estimates obtained for the final model are:
+
 ![Final model parameters []{label="chart"}](solution_figures/q4_params.png)
 
-Hence the model fitted is : Y1 = -350.49 + 4.759X1 + 0.189X2, where Y1 = Life Expectancy, X1 = log(Income), X2 = Year
+Hence the model fitted is : Y1 = -350.49 + 4.759X1 + 0.189X2, 
+where Y1 = Life Expectancy, X1 = log(Income), X2 = Year
 
 [code under heading Problem4 in the ipython file - DS5500_HW2_code.ipynb]
 
@@ -69,9 +71,11 @@ Higher the R-squared value, better the model because it means that more variance
 ##### Final model parameters :
 
 As can be seen from the p-value of all the terms in figure 6, all the terms are significant. The intercept and co-efficient estimates obtained for the final model are:
+
 ![Final model parameters []{label="chart"}](solution_figures/q5_params.png)
 
-Hence the model fitted is : Y1 = 61.025 - 0.626X1 + 0.026X2, where Y1 = log(Child Mortality Rate), X1 = log(Income), X2 = Year
+Hence the model fitted is : Y1 = 61.025 - 0.626X1 + 0.026X2, 
+where Y1 = log(Child Mortality Rate), X1 = log(Income), X2 = Year
 
 [code under heading Problem5 in the ipython file - DS5500_HW2_code.ipynb]
 
