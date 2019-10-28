@@ -11,7 +11,28 @@
 
 ## Problem 2:
 
+Below I have discussed the visualization presented by Omair Shafi Ahmed for HW 1 Problem 2 (distribution of income across countries and continents over time).
+Link to the original solution : https://github.com/Omairss/ds5500_hw1/blob/master/Homework1.ipynb
+
+Visualization description: Omair has used a heat map and a stacked plot to show the distribution of income across countries over time.
+
+Similarity to mines? It is similar to mines in the term that we both have used static plots but the choice of plots are very different. I have chosen line plots for the same.
+
+Easy to interpret? Does it effectively visualize what is being asked? Why or why not?
+I really liked the unique choice of heat map here. Given the huge number of countries in the dataset, line plot makes it quite clumsy to study the pattern of income change over the years for each of the individual country using a single plot but here the color coding makes it very easy to observe at a glance, the change in pattern or any unique behaviour for any particular country. However, searching for a particular country would have been easier if country abbreviations would have been replaced by the country name.
+In my opinion, using stacked plot to visualize the changing income distributions across countries over time was not a wise choice since here the total number of countries are more than the maximum unique colors available in the plot’s color palette. Therefore, as can be seen from the legend of the stacked plot, multiple countries are represented by the same color which makes it difficult to study and interpret the plot distinguishably. It would have been a perfect choice to visualize the changing income distributions across ‘continents’ over time since there are just 4 or 6 continents.
+
 ## Problem 3:
+
+Below I have discussed the visualization presented by Omair Shafi Ahmed for HW 1 Problem 3 (relationship between income, life expectancy, and child mortality over time).
+Link to the original solution : https://github.com/Omairss/ds5500_hw1/blob/master/Homework1.ipynb
+
+Visualization description: Omair has used Seaborn’s Pairgrid plot to show the relationship between income, life expectancy, and child mortality over time.
+
+Similarity to mines? Again, it is similar to mines in the term that we both have used static plots but the choice of plots are very different. I have chosen line plots for the same.
+
+Easy to interpret? Does it effectively visualize what is being asked? Why or why not?
+Yet again, I really liked the unique choice of plot here and in my opinion, the plot very efficiently shows the distribution of each of the individual terms over time and the relationship amongst the three at the same time. The choice of interactive plots here makes it difficult for the users to retain and establish a clear relation between the three as well as distrubution over time for any of the three at a glance. Also, this plot very clearly conveys what proportion of the total countries in the world had the income, life expectancy or child mortality values in a particular range for a particular year. However, to study all of the above-mentioned things for a particular continent or making comparisons across continents, the points in the pairgrid can be colored based on continents. 
 
 ## Problem 4:
 
@@ -86,15 +107,3 @@ where Y1 = log(Child Mortality Rate), X1 = log(Income), X2 = Year
 Autocorrelation of time series exists when there is a correlation of the time series with it’s own lagged version. It might be useful in some of the problems of technical analysis, such as, predicting if there is a momentum factor associated with a stock. However, an underlying assumptions of regression analysis is that data has no autocorrelation. If not so, autocorrelation increases the variance of the coefficient estimates and hence deflates the size of estimated standard error. The F-statistic, R2, and adjusted R2 may not be accurate either. Additionally,  when the autocorrelation comes from a missing independent variable, the coefficient estimates will be biased. This makes the results obtained by the model very unclear, misleading and in some cases meaningless. 
 
 [code under heading Problem5 in the ipython file - DS5500_HW2_code.ipynb]
-
-
-
-
-
-
-
-
-
-
-
-
