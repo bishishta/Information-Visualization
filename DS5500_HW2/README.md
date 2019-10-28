@@ -54,7 +54,19 @@ Existence of linear relationship between the response variable and each of the p
 ![comparing the R-squared value between the two models []{label="chart"}](solution_figures/q4_stats.png)
 ###### Figure 3: baseline and final model statistics
 
-Higher the R-squared value, better the model because it means that more variance is explained by the model. As can be seen in the figure 3, the baseline model has a R-squared value of 0.440 and the final model has a R-squared value of 0.703. Hence, the later is a better model.
+Higher the R-squared value, better the model because it means that more variance is explained by the model. As can be seen in the figure 3, the baseline model has a R-squared value of 0.440 and the final model has a R-squared value of 0.703.  Also, the RMSE value obtained for baseline model is 7.437 on train set and 7.512 on test set which is way higher than the RMSE value obtained for the final model - 5.397 on train set and 5.811 on test set. Hence, the later is a better model. The RMSE for the train and the test sets are very similar, that shows that the model has fairly good predictive power and the data is not underfitted or overfitted.
+
+Below is a line plot  for actual vs predicted values for both train and test sets for the final model: 
+
+![line plot  for actual vs predicted values for both train and test sets []{label="lineplot"}](solution_figures/q4_actualvsfitted.png)
+###### Figure 4: actual vs predicted values for both train and test sets
+
+Below is a plot  for actual vs regression planes for both train and test sets for the final model: 
+
+![plot  for actual vs regression planes for both train and test sets []{label="3dplot"}](solution_figures/q4_actualvsregression.png)
+###### Figure 5: actual vs regression planes for both train and test sets
+
+Both the above plots have a great overlap, exhibiting a good predictive ability of the fitted model.
 
 ##### Final model parameters :
 
@@ -62,8 +74,10 @@ As can be seen from the p-value of all the terms in figure 3, all the terms are 
 
 ![Final model parameters []{label="chart"}](solution_figures/q4_params.png)
 
-Hence the model fitted is : Y1 = -350.49 + 4.759X1 + 0.189X2, 
+Hence the model fitted is : Y1 = -351.219 + 4.802X1 + 0.189X2, \
 where Y1 = Life Expectancy, X1 = log(Income), X2 = Year
+
+Predicted value of life expectancy will increase by 4.802 for each one-unit increase in log(income), if year remains constant. Predicted value of life expectancy will increase by 0.189 for each one-unit increase in year, if log(income) remains constant. Both income and year exhibit a positive relation with the life expectancy.
 
 ##### Impact of autocorrelation of time series on analysis:
 
@@ -79,28 +93,42 @@ Autocorrelation of time series exists when there is a correlation of the time se
 ##### Comparing the linearity between the response variable and each of the predictor variables :
 
 ![Baseline : comparing the linearity between the response variable and each of the predictor variables []{label="fig:pairplot"}](solution_figures/q5_baseline_pair_plot.png)
-###### Figure 4: pair-plot for baseline model
+###### Figure 6: pair-plot for baseline model
 
 ![Final : comparing the linearity between the response variable and each of the predictor varables []{label="fig:pairplot"}](solution_figures/q5_pair_plot.png)
-###### Figure 5: pair-plot for final model
+###### Figure 7: pair-plot for final model
 
-Existence of linear relationship between the response variable and each of the predictor variables is one of the core assumptions to fit a linear regression model. But as is evident from figure 4 that a linear relationship doe not exist between child mortality rate and income [GDP per capita]. Hence, the assumption is violated by the baseline model, whereas it is clearly followed in the pair-plots for the final model, as can be seen in figure 5.
+Existence of linear relationship between the response variable and each of the predictor variables is one of the core assumptions to fit a linear regression model. But as is evident from figure 6 that a linear relationship doe not exist between child mortality rate and income [GDP per capita]. Hence, the assumption is violated by the baseline model, whereas it is clearly followed in the pair-plots for the final model, as can be seen in figure 7.
 
 ##### Comparing the R-squared value between the two models :
 
 ![comparing the R-squared value between the two models []{label="chart"}](solution_figures/q5_stats.png)
-###### Figure 6: baseline and final model statistics
+###### Figure 8: baseline and final model statistics
 
-Higher the R-squared value, better the model because it means that more variance is explained by the model. As can be seen in the figure 6, the baseline model has a R-squared value of 0.378 and the final model has a R-squared value of 0.808. Hence, the later is a better model.
+Higher the R-squared value, better the model because it means that more variance is explained by the model. As can be seen in the figure 8, the baseline model has a R-squared value of 0.378 and the final model has a R-squared value of 0.808. Also, the RMSE value obtained for baseline model is 60.946 on train set and 61.816 on test set which is way higher than the RMSE value obtained for the final model : 0.537 on train set and 0.534 on test set. Hence, the later is a better model. The RMSE for the train and the test sets are very similar, that shows that the model has fairly good predictive power and the data is not underfitted or overfitted.
+
+Below is a line plot  for actual vs predicted values for both train and test sets for the final model: 
+
+![line plot  for actual vs predicted values for both train and test sets []{label="lineplot"}](solution_figures/q5_actualvsfitted.png)
+###### Figure 9: actual vs predicted values for both train and test sets
+
+Below is a plot  for actual vs regression planes for both train and test sets for the final model: 
+
+![plot  for actual vs regression planes for both train and test sets []{label="3dplot"}](solution_figures/q5_actualvsregression.png)
+###### Figure 10: actual vs regression planes for both train and test sets
+
+Both the above plots have a great overlap, exhibiting a good predictive ability of the fitted model.
 
 ##### Final model parameters :
 
-As can be seen from the p-value of all the terms in figure 6, all the terms are significant. The intercept and co-efficient estimates obtained for the final model are:
+As can be seen from the p-value of all the terms in figure 8, all the terms are significant. The intercept and co-efficient estimates obtained for the final model are:
 
 ![Final model parameters []{label="chart"}](solution_figures/q5_params.png)
 
-Hence the model fitted is : Y1 = 61.025 - 0.626X1 + 0.026X2, 
+Hence the model fitted is : Y1 = 60.923 - 0.626X1 - 0.026X2, \
 where Y1 = log(Child Mortality Rate), X1 = log(Income), X2 = Year
+
+Predicted value of child mortality rate will decrease by  1.870 ( e^0.626) for each one-unit increase in log(income), if year remains constant. Predicted value of child mortality rate will decrease by 1.026 ( e^0.026 ) for each one-unit increase in year, if log(income) remains constant. Both income and year exhibit a negative relation with the child mortality rate.
 
 ##### Impact of autocorrelation of time series on analysis:
 
