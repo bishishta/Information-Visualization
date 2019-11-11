@@ -3,17 +3,13 @@
 ## Problem 1:
 
 #### Federal funding assigned to each state:
-
 ![federal funding assigned to each state []{label="bargraph"}](solution_figures/Q1_FFPS.png)
 ###### Figure 1: Federal Funding assigned to each state
-
 As seen from figure 1, the state which takes in the most federal revenue is California, followed by Texas, New York, Florida and Illinois while Vermont gets the least federal funding amongst all the U.S states, followed by Wyoming, North Dakota, Delaware and New Hampshire.
 
 #### Federal funding spent per student for each state:
-
 ![Federal funding spent per student for each state []{label="bargraph"}](solution_figures/Q1_FFPSPS.png)
 ###### Figure 2: Federal funding spent per student for each state
-
 As seen from figure 2, the state which spends the most federal funding per student is District of Columbia, followed by Alaska, Louisiana, New Mexico and South Dakota.
 
 [code under heading Problem 1 in the ipython file - DS5500_HW3_code.ipynb]
@@ -33,10 +29,8 @@ As seen from figure 3, there exists a strong positive correlation between total 
 As seen from figure 4, more the total revenue received by a school district, more the total expenditure.
 
 #### Debt per student for each state:
-
 ![Debt per student for each state []{label="bargraph"}](solution_figures/Q2_DPSFS.png)
 ###### Figure 5:  Debt per student for each state
-
 As seen from figure 5, South Carolina has the most debt per student, followed by Minnesota, Texas, Pennsylvania and Michigan while Hawaii has the least debt per student followed by Wyoming, West Virginia, Georgia and Vermont.
 
 [code under heading Problem 2 in the ipython file - DS5500_HW3_code.ipynb]
