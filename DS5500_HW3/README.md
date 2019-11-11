@@ -1,4 +1,4 @@
-# Imformation Visualization [DS 5500] - HW2
+# Imformation Visualization [DS 5500] - HW3
 
 ## Problem 1:
 
