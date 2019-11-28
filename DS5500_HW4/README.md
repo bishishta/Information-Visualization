@@ -5,7 +5,7 @@
 #### Proportion of each district’s total funding that will be lost:
 
 ![Proportion of each district’s total funding that will be lost []{label="histogram"}](solution_figures/prob1.png)
-###### Figure 1: Histogram showing distribution of school district's according to total revenue cut range
+###### Figure 1: Histogram showing distribution of school district according to proportion of total revenue cut range
 
 ![Proportion of each district’s total funding that will be lost []{label="histogram"}](solution_figures/prob1_boxplot.png)
 ###### Figure 2: Distribution of proportion of total funding to be cut for school districts with budget cut
@@ -27,7 +27,7 @@ According to the budget ctriteria adopted in HW3 - Problem 4, only 1352 school d
 ![distribution of proportion of enrolled students by race for school districts with budget cut []{label="boxplot"}](solution_figures/prob2_budget_cut.png)
 ###### Figure 5: Distribution of proportion of enrolled students by race for school districts with budget cut
 
-![distribution of proportion of enrolled students by race for school districts with no budget cut []{label="boxplot"}](solution_figures/prob2_no__budget_cut.png)
+![distribution of proportion of enrolled students by race for school districts with no budget cut []{label="boxplot"}](solution_figures/prob2_no_budget_cut.png)
 ###### Figure 6: Distribution of proportion of enrolled students by race for school districts with no budget cut
 
 As seen for figure 4, races: Black, Hispanic and Asian are amongst the minority races when compared to White who predominantly constitue the majority proportion of enrolled children in all schol districts. Furthermore, a careful look at figure 5 and figure 6, reveals that the criteria adopted for budget cut, generated an almost similar distribution to that of figure 4. However, the selection method demonstrates a partial hidden bias and thus, the school districts for whom the budget was deducted contained a higher proportion of children from the minority races: Black, Hispanic and Asian and a lesser proportion of White when compared to school districts for whom the budget was not deducted.
@@ -42,7 +42,7 @@ As seen for figure 4, races: Black, Hispanic and Asian are amongst the minority 
 ![distribution of proportion of enrolled students by disability for school districts with budget cut []{label="boxplot"}](solution_figures/prob3_budget_cut.png)
 ###### Figure 8: Distribution of proportion of enrolled students by disability for school districts with budget cut
 
-![distribution of proportion of enrolled students by disability for school districts with no budget cut []{label="boxplot"}](solution_figures/prob3_no__budget_cut.png)
+![distribution of proportion of enrolled students by disability for school districts with no budget cut []{label="boxplot"}](solution_figures/prob3_no_budget_cut.png)
 ###### Figure 9: Distribution of proportion of enrolled students by disability for school districts with no budget cut
 
 Figure 8 and figure 9 have a similar distribution as that of figure 7, that is the same as original data. However, a careful look at figure 8 shows that the criteria adopted for budget cut included a partial hidden bias towards disabled children and thus, the school districts for whom the budget was deducted contained lesser proportion of disabled children when compared to school districts for whom the budget was not deducted. Although, the mentioned difference can only be seen in the outliers.
@@ -51,7 +51,17 @@ Figure 8 and figure 9 have a similar distribution as that of figure 7, that is t
 
 ## Problem 4:
 
+##### link to choice of fellow classmates’ selection of schools for budget cuts in HW 3 Problem 4 and Problem 5 - https://github.com/Omairss/ds5500-hw3
 
+##### The approach and justification of selection: 
+Approach adopted was first sorting the school districts by their respective per capita spending and then deducting 20% from the top n, till the total federal budget to be cut was achieved. Justification provided was that this method saves 15,000 districts from budget cuts.
+
+##### advantages of the approach: 
+As mentioned in the justification provided, the very first advantage is that this method saves majority of the school districts from budget cut. Secondly, it does not deduct the budget of any school district based on the performance of students, which according to me would have been unjustified because the capabilities of students does not serve as a fair ground for budget allocation in any case and if still considered as one, might hamper the learning and performance of students in a negative way, which is not good for any school district.
+
+##### disadvantages of the approach:
+This method deducts 20% budget from the school districts with most per capita spending which could be a huge deduction for the considered school districts since they already have the highest per capita spendings.Also, this method does not take into account if the considered school districts have enough fundind coming in from other sources like state and local or how much debt does the considered school districts have to pay. 
 
 ## Problem 5:
 
+#### Summarization of the learnings from the lecture on Visualization by Steven Braun.
