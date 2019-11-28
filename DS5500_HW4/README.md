@@ -54,13 +54,13 @@ Figure 8 and figure 9 have a similar distribution as that of figure 7, that is t
 ##### Link to choice of fellow classmates’ selection of schools for budget cuts in HW 3 Problem 4 and Problem 5 - https://github.com/Omairss/ds5500-hw3
 
 ##### The approach and justification of selection: 
-Approach adopted was first sorting the school districts by their respective per capita spending and then deducting 20% from the top n, till the total federal budget to be cut was achieved. Justification provided was that this method saves 15,000 districts from budget cuts.
+Approach adopted: first sorting the school districts by their respective per capita spending and then deducting 20% from the top n, till the total federal budget to be cut was achieved. Justification provided was that this method saves 15,000 districts from budget cuts.
 
 ##### Advantages of the approach: 
 As mentioned in the justification provided, the very first advantage is that this method saves majority of the school districts from budget cut. Secondly, it does not deduct the budget of any school district based on the performance of students, which according to me would have been unjustified because the capabilities of students does not serve as a fair ground for budget allocation in any case and if still considered as one, might hamper the learning and performance of students in a negative way irrespective of the previous performance status, which is not good for any school district.
 
 ##### Disadvantages of the approach:
-This method deducts 20% budget from the school districts with most per capita spending which could be a huge deduction for the considered school districts since they already have the highest per capita spendings. Also, this method does not take into account if the considered school districts have enough funding coming in from other sources like state and local or how much debt does the considered school districts have to pay. 
+This method deducts 20% budget from the school districts with most per capita spending which could be a huge deduction for the considered school districts since they already have the highest per capita spending. Also, this method does not take into account if the considered school districts have enough funding coming in from other sources like state and local or how much debt does the considered school districts have to pay. 
 
 ## Problem 5:
 
